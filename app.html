@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css"
+        />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    
+    <body>
+        <!-- Campaign -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Encounters
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Fellnight Queen (Sarah, Isa, Luis, Silvio)
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slide">
+                            At the lake
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slide">
+                            In the forrest
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Fellnight Queen (Sarah, Eveline, Manuel, Christian)
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slide">
+                            At the lake
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slide">
+                            In the forrest
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                            Encounters
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                            Parties
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Encounter -->
+        <div data-role="page" id="page2">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Encounter - At the lake
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page4" data-transition="fade" data-theme="" data-icon="gear">
+                                Edit encounter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Sarah
+                            <span class="ui-li-count">
+                                17+4=21
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Luis
+                            <span class="ui-li-count">
+                                17+4=21
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Isa
+                            <span class="ui-li-count">
+                                17+4=21
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Silvio
+                            <span class="ui-li-count">
+                                17+4=21
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            Wasserelementar 1
+                            <span class="ui-li-count">
+                                17+4=21
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            Wasserelementar 2
+                            <span class="ui-li-count">
+                                17+4=21
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <input type="submit" value="Roll Initiative">
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                            Encounters
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                            Parties
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Encounter Editor -->
+        <div data-role="page" id="page4">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Encounter-Editor - At the lake
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page6" data-transition="fade" data-theme="" data-icon="">
+                                Add NPC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page4" data-transition="fade" data-theme="" data-icon="">
+                                Add Single Player
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page4" data-transition="fade" data-theme="" data-icon="">
+                                Add Party
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Party ...
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Sarah
+                            <span class="ui-li-count">
+                                +4
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Luis
+                            <span class="ui-li-count">
+                                +6
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Isa
+                            <span class="ui-li-count">
+                                +4
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Silvio
+                            <span class="ui-li-count">
+                                +4
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="b">
+                        <a href="#page6" data-transition="slide">
+                            Wasserelementar 1
+                            <span class="ui-li-count">
+                                +4
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="b">
+                        <a href="#page6" data-transition="slide">
+                            Wasserelementar 2
+                            <span class="ui-li-count">
+                                +4
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                            Encounters
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                            Parties
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Add/Edit character -->
+        <div data-role="page" id="page5">
+            <div data-role="content">
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                            Encounters
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                            Parties
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- NPC Editor -->
+        <div data-role="page" id="page6">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    NPC: Wasserelementar
+                </h3>
+            </div>
+            <div data-role="content">
+                <form action="" method="POST">
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="textinput1">
+                                Name
+                            </label>
+                            <input name="" id="textinput1" placeholder="Wasserelementar" value=""
+                            type="text">
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="textinput2">
+                                Initiative
+                            </label>
+                            <input name="" id="textinput2" placeholder="+4" value="" type="number">
+                        </fieldset>
+                    </div>
+                    <input type="submit" data-icon="check" data-iconpos="left" value="Save">
+                </form>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                            Encounters
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                            Parties
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+              //App custom javascript
+        </script>
+    </body>
+
+</html>
